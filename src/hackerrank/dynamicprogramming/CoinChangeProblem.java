@@ -2,8 +2,8 @@ package hackerrank.dynamicprogramming;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/*Sample Input 0
-
+/* https://www.hackerrank.com/challenges/coin-change/problem
+ * Sample Input 0
 4 3
 1 2 3
 

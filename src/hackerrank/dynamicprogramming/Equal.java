@@ -3,7 +3,7 @@ package hackerrank.dynamicprogramming;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/*
+/* https://www.hackerrank.com/challenges/equal/problem
  * For every operation, she can choose one of her colleagues and can do one of the three things.
 She can give one chocolate to every colleague other than chosen one.
 She can give two chocolates to every colleague other than chosen one.
