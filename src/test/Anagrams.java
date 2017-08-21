@@ -1,4 +1,4 @@
-package company.test;
+package test;
 /* Zapper
  * Given 2 string arrays. output int array which indicates 
  * number of characters needs to update in string

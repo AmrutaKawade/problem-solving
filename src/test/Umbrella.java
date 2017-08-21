@@ -1,4 +1,4 @@
-package company.test;
+package test;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -41,7 +41,7 @@ public class Umbrella {
             		table[j] = j/p[i];
             	}else{
             		if(table[j%p[i]]!=0)
-            			table[j] = (j/p[i] + table[(j%p[i])]);
+            			table[j] = Math.min(table[j],j/p[i] + table[(j%p[i])]);
             	}
             }
         		
