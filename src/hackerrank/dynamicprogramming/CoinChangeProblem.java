@@ -21,22 +21,15 @@ There are four ways to make change for n= 4 using coins with values given by c =
 Thus, we print 4 as our answer.
 */
 public class CoinChangeProblem {
-	    static long getWays(long n, long[] c){
-	    	long[] table = new long[(int) (n+1)];
-	    	 
-	        // Initialize all table values as 0
-	        Arrays.fill(table, 0);   //O(n)
-	 
-	        // Base case (If given value is 0)
-	        table[0] = 1;
-	 
-	        // Pick all coins one by one and update the table[]
-	        // values after the index greater than or equal to
-	        // the value of the picked coin
-	        for (int i=0; i< c.length; i++)
-	            for (int j=(int) c[i]; j<=n; j++)
-	                table[j] += table[(int) (j-c[i])];
-	    	return table[(int) n]; 
+	    static int getWays(long n, long[] c){
+	    	int[] coinChange = new int[(int)n+1];
+	    	coinChange[0] = 1;
+	    	for(int coin = 0; coin < c.length; coin++){
+	    		for(int i = (int) c[coin]; i < coinChange.length; i++){    		
+	    			coinChange[i] = coinChange[i] + coinChange[(int) (i-c[coin])];
+	    		}
+	    	}
+	    	return coinChange[(int)n];
 	    }
 
 	    public static void main(String[] args) {
@@ -44,6 +37,7 @@ public class CoinChangeProblem {
 	        int n = in.nextInt();
 	        //size of array of coins
 	        int m = in.nextInt();
+	        
 	        long[] c = new long[m];
 	        for(int c_i=0; c_i < m; c_i++){
 	            c[c_i] = in.nextLong();
