@@ -14,7 +14,7 @@ class Node {
 		this.right = null;
 	}
 }
-public class BinaryTree {
+public class BFSBinaryTree {
 	
 	public void breadFirstTraversal(Node root){
 		Queue<Node> q = new LinkedList();
@@ -34,7 +34,7 @@ public class BinaryTree {
 	}
 	public static void main(String[] args) 
     {
-        BinaryTree tree = new BinaryTree();
+        BFSBinaryTree tree = new BFSBinaryTree();
   
         Node root = new Node(1);
         root.left = new Node(2);
