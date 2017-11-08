@@ -3,7 +3,7 @@ package util.strings;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Strings1 {
+public class RemoveCommonChar2Strings {
 	public static void main(String args[]){
 		/*String s1 = "aacdb";
 		String s2 = "gafd";*/

@@ -1,11 +1,5 @@
 package util.linkedlist;
-class Node{
-	int data;
-	Node next;
-	public Node(int data){
-		this.data = data;
-	}
-}
+
 public class MergeSortedLinkedLists {
 	public static Node mergeLinkedList(Node head1, Node head2){
 		Node curr1 = head1;
@@ -52,28 +46,11 @@ public class MergeSortedLinkedLists {
 	public static void main(String[] args) {
 		int[] arr1 = {1,3,5,7,11,11,13};//{1,10,15,19,20,25,26,30};
 		int[] arr2 = {2,4,6,8,9,10,11,12,14,15,16};//{2,3,6,10,15,21,28};
-		Node one = createLinkedList(arr1);
-		Node two = createLinkedList(arr2);
+		LinkedList l = new LinkedList();
+		Node one = l.createLinkedList(arr1);
+		Node two = l.createLinkedList(arr2);
 		
 		Node root = mergeLinkedList(one,two);
-		printLinkedList(root);
-	}
-	private static void printLinkedList(Node root) {
-		while(root != null){
-			System.out.println(root.data);
-			root = root.next;
-		}
-	}
-	private static Node createLinkedList(int[] arr) {
-		int i = 1;
-		Node start = new Node(arr[0]);
-		Node prev = start;
-		while(i < arr.length){
-			Node node = new Node(arr[i]);
-			prev.next = node;
-			prev = node;
-			i++;
-		}
-		return start;
+		l.printLinkedList(root);
 	}
 }
