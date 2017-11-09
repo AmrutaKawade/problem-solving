@@ -3,17 +3,6 @@ package util.tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Node {
-	int data;
-	Node left;
-	Node right;
-	boolean isThreaded;
-	public Node(int data){
-		this.data = data;
-		this.left = null;
-		this.right = null;
-	}
-}
 public class BFSBinaryTree {
 	
 	public void breadFirstTraversal(Node root){
