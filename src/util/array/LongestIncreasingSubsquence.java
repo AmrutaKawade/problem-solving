@@ -21,12 +21,7 @@ public class LongestIncreasingSubsquence {
 			array[i] = 1;
 		}
 	}
-	private static void print(int[] array, int len){
-		for(int i=0; i < len;i++){
-			System.out.print(array[i]+" ");
-		}
-		System.out.println();
-	}
+	
 	private static int ceilIndex(int input[], int T[], int end, int s){
         int start = 0;
         int middle;
@@ -52,7 +47,7 @@ public class LongestIncreasingSubsquence {
 	        }
 	        T[0] = 0;
 	        int len = 0;
-	    try{
+
 	        for(int i=1; i < input.length; i++){
 	            if(input[T[0]] >= input[i]){ //if input[i] is less than 0th value of T then replace it there.
 	                T[0] = i;
@@ -66,9 +61,6 @@ public class LongestIncreasingSubsquence {
 	                R[T[index]] = T[index-1];
 	            }
 	        }
-	    }catch(Exception e){
-	    	print(T,len);
-	    }
 
 	        //this prints increasing subsequence in reverse order.
 	        /*System.out.print("Longest increasing subsequence ");
