@@ -5,6 +5,7 @@ class Node {
 	Node left;
 	Node right;
 	boolean isThreaded;
+	Node next;
 	public Node(int data){
 		this.data = data;
 		this.left = null;
