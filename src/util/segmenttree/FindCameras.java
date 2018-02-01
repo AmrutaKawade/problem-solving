@@ -1,4 +1,4 @@
-package util.query;
+package util.segmenttree;
 
 import java.util.ArrayList;
 import java.util.Collections;
