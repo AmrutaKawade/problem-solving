@@ -5,6 +5,13 @@ import java.util.Scanner;
 //https://www.geeksforgeeks.org/dynamic-programming-set-8-matrix-chain-multiplication/
 //DP
 //https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication/0
+//Input
+//1
+//15
+//488 357 244 492 228 366 360 437 433 52 438 229 276 408 475
+//Ouput
+//91364572
+
 public class MatrixChainMultiplication {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
