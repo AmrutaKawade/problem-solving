@@ -1,4 +1,4 @@
-package test;
+package util.dynamicprogramming;
 
 import java.util.Scanner;
 
