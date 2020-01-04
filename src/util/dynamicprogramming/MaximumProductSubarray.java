@@ -1,4 +1,4 @@
-package util.array;
+package util.dynamicprogramming;
 /*Given an array of elements with size n. find maximum product contagious subarray
  * Input: arr[] = {6, -3, -10, 0, 2}
  * Output:   180  // The subarray is {6, -3, -10}

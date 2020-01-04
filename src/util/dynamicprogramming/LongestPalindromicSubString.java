@@ -1,11 +1,11 @@
-package util.strings;
+package util.dynamicprogramming;
 
-public class LongestPalindromicSubSquence {
+public class LongestPalindromicSubString {
 	private int[] p;  // p[i] = length of longest palindromic substring of t, centered at i
     private String s;  // original string
     private char[] t;  // transformed string
 
-    public LongestPalindromicSubSquence(String s) {
+    public LongestPalindromicSubString(String s) {
         this.s = s;
         preprocess();
         p = new int[t.length];
@@ -67,7 +67,7 @@ public class LongestPalindromicSubSquence {
 //        String s = "abacdfgdcaba";
 //          String s = "abacdfgdcabba";
         String s = "abaxabaxabybaxabyb";
-        LongestPalindromicSubSquence manacher = new LongestPalindromicSubSquence(s);
+        LongestPalindromicSubString manacher = new LongestPalindromicSubString(s);
         System.out.println(manacher.longestPalindromicSubstring());
         System.out.println(manacher.p.toString());
     }

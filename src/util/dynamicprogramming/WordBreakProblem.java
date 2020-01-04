@@ -1,4 +1,4 @@
-package util.trie;
+package util.dynamicprogramming;
 
 import java.util.ArrayList;
 import java.util.HashMap;

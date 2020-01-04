@@ -1,4 +1,4 @@
-package hackerrank.dynamicprogramming;
+package util.dynamicprogramming;
 import java.util.Arrays;
 import java.util.Scanner;
 
